@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>Bitcoin Wallet Generator</title>
+		<meta name="description" content="Easily and simply create a secure Bitcoin account"/>
+		<link rel="shortcut icon" href="favicon.ico" />
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css"/>
+		<link rel="stylesheet" href="style.min.css"/>
+	</head>
+	<body>
+		<div class="container">
+			<h2 id="public-key"></h2>
+			<h2 id="private-key"></h2>
+			<button id="generate" type="button" class="btn btn-default">Generate Another Wallet</button>
+			<p id="wallet-app">
+				<strong>Note:</strong> To use these, download a Bitcoin wallet application such as <a href="https://electrum.org/">Electrum</a> to manage your bitcoins.
+			</p>
+		</div>
+		<script
+  			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="bitcoin.min.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>
