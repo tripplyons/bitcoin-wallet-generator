@@ -1,10 +1,14 @@
-#public-key, #private-key {
-	word-wrap: break-word;
+#title, #wallet-app, .section h4, #public-key, #private-key {
 	text-align: center;
 }
 
-#wallet-app {
-	text-align: center;
+#public-key, #private-key {
+	word-wrap: break-word;
+}
+
+.section {
+	max-width: 400px;
+	margin: 16px auto;
 }
 
 small {

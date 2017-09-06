@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Bitcoin Wallet Generator</title>
 		<meta name="description" content="Easily and simply create a secure Bitcoin account"/>
-		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="shortcut icon" href="favicon.png" />
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/simplex/bootstrap.min.css"/>
@@ -14,12 +14,28 @@
 	</head>
 	<body>
 		<div class="container">
+			<h1 id="title">Bitcoin Wallet Generator</h1>
 			<h2 id="public-key"></h2>
 			<h2 id="private-key"></h2>
-			<button id="generate" type="button" class="btn btn-default">Generate Another Wallet</button>
+			<button id="generate" type="button" class="btn btn-default">Generate New Wallet</button>
 			<p id="wallet-app">
 				<strong>Note:</strong> To use these, download a Bitcoin wallet application such as <a href="https://electrum.org/">Electrum</a> to manage your bitcoins.
 			</p>
+			<div class="section">
+				<h4>Security Precautions</h4>
+				<ul>
+					<li>
+						Never store your password/private key digitally if you are not fine with losing your money. It lets you make purchases.
+					</li>
+					<li>
+						Your address/public key is public information that lets people send you money.
+					</li>
+				</ul>
+			</div>
+			<div class="section">
+				<h4>Is this site safe?</h4>
+				Yes it is. Everything is done on the client side. The website itself is <a href="https://github.com/tripplyons/bitcoin-wallet-generator">open source</a> if you want to look at the code used or run it yourself.
+			</div>
 		</div>
 		<script
   			src="https://code.jquery.com/jquery-1.12.4.min.js"
