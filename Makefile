@@ -1,2 +1,2 @@
 publish:
-	surge . bitcoin-wallet-generator.surge.sh
+	surge dist bitcoin-wallet-generator.surge.sh

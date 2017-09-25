@@ -17,19 +17,30 @@
 			<h1 id="title">Bitcoin Wallet Generator</h1>
 			<h2 id="public-key"></h2>
 			<h2 id="private-key"></h2>
-			<button id="generate" type="button" class="btn btn-default">Generate New Wallet</button>
 			<div class="section">
-				<h4>How do I use these keys?</h4>
-				To use them, you need download to a Bitcoin wallet application such as <a href="https://electrum.org/">Electrum</a> or use a website such as <a href="https://www.coinbase.com/">Coinbase</a> to manage your bitcoins.
+				<div id="generate" class="btn btn-default">Generate New Wallet</div>
+			</div>
+			<div class="section">
+				<div class="row">
+					<div class="col-md-6">
+						<input type="text" class="form-control" placeholder="Seed" id="seed">
+					</div>
+					<div class="col-md-6">
+						<div id="generate-with-seed" class="btn btn-default btn-block">Generate Wallet From Seed</button>
+					</div>
+				</div>
 			</div>
 			<div class="section">
 				<h4>Security Precautions</h4>
 				<ul>
 					<li>
-						Never store your password/private key digitally unless you are okay with losing your money. It lets you make purchases.
+						Never store your seed or password/private key digitally unless you are okay with losing your money. It lets you make purchases and access your account.
 					</li>
 					<li>
 						Your address/public key is public information that lets people send you money.
+					</li>
+					<li>
+						Don't use a short seed.
 					</li>
 				</ul>
 			</div>
@@ -48,8 +59,8 @@
 			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 			crossorigin="anonymous"
 		></script>
+		<script src="https://cdn.rawgit.com/chrisveness/crypto/4e93a4d/sha256.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="bitcoin.min.js"></script>
-		<script src="main.js"></script>
+		<script src="bundle.js"></script>
 	</body>
 </html>

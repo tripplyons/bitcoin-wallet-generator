@@ -1,0 +1,23 @@
+{
+  "name": "bitcoin-wallet-generator",
+  "version": "1.0.0",
+  "description": "A secure and easy-to-use way to create a Bitcoin account",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack src/index.js dist/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tripplyons/bitcoin-wallet-generator.git"
+  },
+  "author": "Tripp Lyons",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tripplyons/bitcoin-wallet-generator/issues"
+  },
+  "homepage": "https://github.com/tripplyons/bitcoin-wallet-generator#readme",
+  "dependencies": {
+    "bitcoinjs-lib": "^3.2.0",
+    "buffer": "^5.0.7"
+  }
+}
